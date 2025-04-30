@@ -2046,28 +2046,31 @@
         <script src="owlcarousel/jquery.min.js"></script>
         <script src="owlcarousel/owl.carousel.min.js"></script>
         <script>
-            $(document).ready(function () {
-                $(".owl-carousel").owlCarousel({
-                    margin: 10,
-                    loop: true,
-                    autoWidth: true,
-                    items: 4,
-                });
-            });
+            // $(document).ready(function () {
+            //     $(".owl-carousel").owlCarousel({
+            //         margin: 10,
+            //         loop: true,
+            //         autoWidth: true,
+            //         items: 4,
+            //     });
+            // });
 
             //   ===== Feature Product Slider
             $(".feature-carousel").owlCarousel({
                 loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
                 navText: [
                     '<i class="fa-solid fa-angle-left"></i>',
                     '<i class="fa-solid fa-angle-right"></i>',
                 ],
-                margin: 20,
                 responsiveClass: true,
                 responsive: {
                     0: {
                         items: 1,
-                        nav: true,
+                        nav: false,
                     },
                     768: {
                         items: 2,
@@ -2076,7 +2079,6 @@
                     992: {
                         items: 4,
                         nav: true,
-                        loop: false,
                     },
                 },
             });
@@ -2090,6 +2092,9 @@
                     '<i class="fa-solid fa-angle-right"></i>',
                 ],
                 margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -2103,7 +2108,6 @@
                     992: {
                         items: 3,
                         nav: true,
-                        loop: false,
                     },
                 },
             });
@@ -2118,6 +2122,9 @@
                     '<i class="fa-solid fa-angle-right"></i>',
                 ],
                 margin: 20,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -2131,11 +2138,20 @@
                     992: {
                         items: 4,
                         nav: true,
-                        loop: false,
                     },
                 },
             });
             // ===== Testimonial Slider End
+
+            // ===== Sticky Navbar
+            window.addEventListener('scroll', function () {
+                const element = document.querySelector('.mian_nav');
+                if (window.scrollY > 300) {
+                    element.classList.add('fixed-nav');
+                } else {
+                    element.classList.remove('fixed-nav');
+                }
+            });
         </script>
     </body>
 </html>
