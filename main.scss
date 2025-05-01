@@ -408,6 +408,36 @@ header {
   left: auto;
   right: -60px;
 }
+// ===== Feature Cattle
+
+// ===== Fixed Social Icons
+.fixed_social_icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 0 12px 12px 0;
+  padding: 0 10px;
+  z-index: 9999;
+  li {
+    a {
+      padding: 7px 0;
+      display: inline-block;
+      border-bottom: 1px solid $light-color;
+      transition: all 0.4s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &:last-child a {
+      border: none;
+    }
+  }
+}
+// ===== Fixed Social Icons End
 
 // ===== Our Process
 .our_process {
