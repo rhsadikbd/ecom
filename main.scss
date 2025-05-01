@@ -241,12 +241,8 @@ section {
   transform: translateY(-100%);
   opacity: 0;
   animation: slideDown 0.7s forwards ease-in-out;
-  .topbar {
-    display: none;
-  }
-  .nav_main {
-    margin-top: 15px;
-  }
+  background-color: $light-color;
+  padding-bottom: 10px;
 }
 @keyframes slideDown {
   to {
@@ -294,7 +290,6 @@ header {
     }
   }
 }
-
 // Featured Cattle
 .featured_cattle {
   padding-bottom: 10px;
