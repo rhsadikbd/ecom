@@ -1,0 +1,265 @@
+.page_banner_section {
+  padding: 20px 0 0;
+  .banner_img {
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+  }
+}
+
+.all_cattle_section {
+  .cattle_sidebar {
+    .sidebar_title {
+      color: $secondary-color;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 132%;
+      margin-bottom: 32px;
+    }
+    .filter_area {
+      background-color: $light-color;
+      padding: 12px;
+      border-radius: 4px;
+      .search_input {
+        padding-left: 40px;
+      }
+      .search_icon {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        color: $dark-color;
+        font-size: 14px;
+        color: $dark-color;
+      }
+      .box {
+        padding: 12px 12px 5px 12px;
+        border-radius: 4px;
+        border: 1px solid $silver-color;
+        margin-bottom: 15px;
+        .title {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          color: #555555;
+          padding: 0 0 11px 0;
+          border-bottom: 1px solid $silver-color;
+        }
+        .range_slider {
+          margin-top: 15px;
+        }
+      }
+      .testimonial_area {
+        .accordion-item {
+          color: transparent;
+          background-color: unset;
+          border: none;
+          border-bottom: 2px solid $silver-color;
+        }
+        .accordion-button {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 100%;
+          color: #555555;
+          background-color: unset;
+          padding: 12px 0 10px;
+          &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+          }
+          &.collapsed {
+            color: $dark-color;
+          }
+          &::after {
+            transform: scale(0.7);
+          }
+        }
+        .accordion-body {
+          padding: 10px 0 0 0;
+          label {
+            font-size: 14px;
+            color: #7f8183;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .btn-apply {
+        margin-top: 15px;
+        border-radius: 4px;
+        background: $primary-color;
+        color: $light-color;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+    .long_banner {
+      margin-top: 30px;
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .cattle_details {
+    .top_filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      ul {
+        background-color: #0073360d;
+        border-radius: 30px;
+        padding: 10px !important;
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        margin: 0;
+        padding: 0;
+        li {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 6px 15px;
+          border-radius: 20px;
+          margin-right: 5px;
+          &.active,
+          &:hover {
+            background-color: $primary-color;
+            color: $light-color;
+            cursor: pointer;
+          }
+        }
+      }
+      select {
+        max-width: 200px;
+      }
+    }
+    .card_default_item {
+      background-color: $light-color;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      border: 1px solid var($silver-color);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease-in-out;
+      border: 1px solid transparent;
+      &:hover {
+        .attr_list .chip_default {
+          background-color: $primary-color !important;
+          color: $light-color;
+          svg path {
+            fill: $light-color !important;
+          }
+        }
+        transform: scale(1.02);
+        border: 1px solid $primary-color;
+      }
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .card_content {
+        padding: 15px;
+        .attr_list {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .chip_default {
+            font-weight: 500;
+            font-size: 10px;
+            background-color: $silver-color;
+            padding: 3px 10px 3px 5px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+          }
+          .chip_outlined {
+            font-weight: 500;
+            font-size: 10px;
+            background-color: $light-color;
+            padding: 3px 10px 3px 5px;
+            border: 1px solid $silver-color;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+          }
+          .status {
+            font-weight: 500;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            .state {
+              color: $primary-color;
+            }
+            .label {
+              color: $dark-color;
+            }
+          }
+        }
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .title_no {
+            color: $dark-color;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+          }
+          .offer_chip {
+            img {
+              width: auto;
+              height: 30px !important;
+              margin-top: 7px;
+            }
+          }
+        }
+        .price_label {
+          font-weight: 600;
+          font-size: 16px;
+          color: $primary-color;
+          margin: 8px 0 15px 0;
+        }
+      }
+    }
+    .filter_pagination {
+      margin-top: 5px;
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        li {
+          font-size: 14px;
+          width: 36px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          background-color: $light-color;
+          color: $dark-color;
+          border: 1px solid #cbd5e1;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &.active,
+          &:hover {
+            background-color: $primary-color;
+            color: $light-color;
+          }
+        }
+      }
+    }
+  }
+}

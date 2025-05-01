@@ -1,0 +1,688 @@
+// ----- Slider Section
+.slider_section {
+  padding: 0;
+  margin-top: -112px;
+}
+// ----- Slider Section End
+
+// ----- USP Section
+.usp_section {
+  width: 100%;
+  max-width: 1160px;
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .usp_card {
+    width: 100%;
+    max-width: 254px;
+    padding: 16px 24px;
+    border-radius: 32px;
+    border: 1px solid #c3ded0;
+    border-left-width: 4px;
+    border-top-width: 4px;
+    background-color: #00733610;
+    text-align: center;
+    img {
+      height: 64px;
+      margin-bottom: 12px;
+    }
+    h6 {
+      color: $dark-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 124%; /* 19.88px */
+      text-transform: capitalize;
+    }
+  }
+}
+// ----- USP Section End
+
+// ----- Featured Cattle Section
+.featured_cattle {
+  padding-bottom: 10px;
+  .featured_card {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--Silver, #eaeaea);
+    background: var(--Light, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin: 40px 0;
+    &:hover {
+      .content_block .point_notes li::after {
+        background-color: $primary-color;
+        opacity: 1;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      height: 240px;
+      border-radius: 12px 12px 0 0;
+    }
+    .content_block {
+      padding: 16px;
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        h5 {
+          color: $dark-color;
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0;
+        }
+        .status {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          .state {
+            font-weight: 500;
+            font-size: 12px;
+            text-align: right;
+            color: $primary-color;
+          }
+          .label {
+            font-weight: 400;
+            font-size: 12px;
+            color: $dark-color;
+          }
+        }
+      }
+      .price_label {
+        color: $primary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 15px 0 5px;
+      }
+      .point_notes {
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          color: $dark-color;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          padding-right: 16px;
+          padding-left: 8px;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 8px;
+            background-color: $dark-color;
+            top: 50%;
+            left: -3px;
+            margin-top: -3px;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+  .feature-carousel .owl-nav button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45%;
+    left: -60px;
+    background-color: $light-color !important;
+    transform: translateY(-50%);
+    border: 1px solid $dark-color !important;
+    border-radius: 30px;
+    line-height: 35px !important;
+    color: $dark-color !important;
+    font-size: 20px !important;
+    opacity: 0.6;
+  }
+  .feature-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -60px;
+  }
+}
+// ----- Featured Cattle Section End
+
+// ----- Our Process Section
+.our_process {
+  background-image: url(../../assets/img/pattern-bg.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 20%;
+  position: relative;
+  padding-bottom: 80px;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(2, 82, 39, 0.9) 0%,
+        rgba(2, 82, 39, 0.9) 100%
+      ),
+      url(<path-to-image>) lightgray 0% 0% / 10.000000149011612px
+        10.000000149011612px repeat;
+    opacity: 90%;
+  }
+  .container {
+    position: relative;
+    z-index: 9;
+    .section_title {
+      .title {
+        font-weight: 600;
+        font-size: 24px;
+        color: $light-color;
+      }
+      .text_default {
+        font-weight: 500;
+        font-size: 16px;
+        color: $silver-color;
+        margin: 15px 0 25px;
+        display: block;
+      }
+    }
+    .card_default {
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: $light-color;
+      img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+      }
+      .text_content {
+        padding: 16px 24px;
+
+        .title {
+          color: $dark-color;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+// ----- Our Process Section End
+
+// ----- Marketplace Section
+.marketplace {
+  .section_title {
+    margin-bottom: 32px;
+  }
+  .card_default_item {
+    background-color: $light-color;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 1px solid var($silver-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    &:hover {
+      .attr_list .chip_default {
+        background-color: $primary-color !important;
+        color: $light-color;
+        svg path {
+          fill: $light-color !important;
+        }
+      }
+      transform: scale(1.05);
+      border: 1px solid $primary-color;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    }
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card_content {
+      padding: 15px;
+      .attr_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .chip_default {
+          font-weight: 500;
+          font-size: 10px;
+          background-color: $silver-color;
+          padding: 3px 10px 3px 5px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+        .chip_outlined {
+          font-weight: 500;
+          font-size: 10px;
+          background-color: $light-color;
+          padding: 3px 10px 3px 5px;
+          border: 1px solid $silver-color;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+        .status {
+          font-weight: 500;
+          font-size: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          .state {
+            color: $primary-color;
+          }
+          .label {
+            color: $dark-color;
+          }
+        }
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title_no {
+          color: $dark-color;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0;
+        }
+        .offer_chip {
+          img {
+            width: auto;
+            height: 30px !important;
+            margin-top: 7px;
+          }
+        }
+      }
+      .price_label {
+        font-weight: 600;
+        font-size: 16px;
+        color: $primary-color;
+        margin: 8px 0 15px 0;
+      }
+    }
+  }
+}
+// ----- Marketplace Section End
+
+// ----- Latest Cattle Section
+.latest_cattle {
+  background-image: url(../../assets/img/pattern-bg.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 20%;
+  position: relative;
+  padding-bottom: 32px;
+  .section_title {
+    margin-bottom: 32px;
+  }
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: $light-color;
+    opacity: 70%;
+  }
+  .card_default_item {
+    background-color: $light-color;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 1px solid var($silver-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    &:hover {
+      .attr_list .chip_default {
+        background-color: $primary-color !important;
+        color: $light-color;
+        svg path {
+          fill: $light-color !important;
+        }
+      }
+      border: 1px solid $primary-color;
+    }
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card_content {
+      padding: 15px;
+      .attr_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .chip_default {
+          font-weight: 500;
+          font-size: 10px;
+          background-color: $silver-color;
+          padding: 3px 10px 3px 5px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+        .chip_outlined {
+          font-weight: 500;
+          font-size: 10px;
+          background-color: $light-color;
+          padding: 3px 10px 3px 5px;
+          border: 1px solid $silver-color;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+        .status {
+          font-weight: 500;
+          font-size: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          .state {
+            color: $primary-color;
+          }
+          .label {
+            color: $dark-color;
+          }
+        }
+      }
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title_no {
+          color: $dark-color;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 0;
+        }
+        .offer_chip {
+          img {
+            width: auto;
+            height: 30px !important;
+            margin-top: 7px;
+          }
+        }
+      }
+      .price_label {
+        font-weight: 600;
+        font-size: 16px;
+        color: $primary-color;
+        margin: 8px 0 15px 0;
+      }
+    }
+  }
+  .latest-cattle-carousel .owl-nav button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45%;
+    left: -60px;
+    background-color: $light-color !important;
+    transform: translateY(-50%);
+    border: 1px solid $dark-color !important;
+    border-radius: 30px;
+    line-height: 35px !important;
+    color: $dark-color !important;
+    font-size: 20px !important;
+    opacity: 0.6;
+  }
+  .latest-cattle-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: -60px;
+  }
+}
+// ----- Latest Cattle Section End
+
+// ----- About Info Section
+.about_info {
+  .text_default {
+    color: $dark-color;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 20px;
+    line-height: 22px !important;
+  }
+  .about-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    img {
+      width: 48%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  .info_card {
+    padding: 15px 14px;
+    border-radius: 32px;
+    border: 1px solid #c3ded0;
+    border-left-width: 4px;
+    border-top-width: 4px;
+    background-color: rgba(0, 115, 54, 0.062745098);
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 15px;
+    img {
+      height: 64px;
+      width: 64px;
+      object-fit: contain;
+    }
+    .text_content {
+      text-align: left;
+      .title {
+        font-weight: 500;
+        font-size: 18px;
+        color: $primary-color;
+      }
+      .text_default {
+        font-weight: 300;
+        font-size: 16px;
+        color: $dark-color;
+        margin: 0;
+        .strong-text {
+          font-weight: 500;
+        }
+        .num {
+          font-weight: bold;
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+// ----- About Info Section End
+
+// ----- Testimonials Section
+.testimonials {
+  .section_title {
+    margin-bottom: 32px;
+  }
+  .testimonial-carousel {
+    .testimonial_card {
+      padding: 20px;
+      border-radius: 32px;
+      border: 1px solid $silver-color;
+      border-left-width: 4px;
+      border-top-width: 4px;
+      background-color: $light-color;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: $primary-color;
+      }
+      .img_user {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+      }
+      .user_name {
+        font-weight: 400;
+        font-size: 12px;
+        color: $dark-color;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      &:hover {
+        .user_name {
+          color: $light-color;
+        }
+        .title {
+          color: $light-color;
+        }
+        .text_default {
+          color: $light-color;
+        }
+      }
+      .title {
+        font-weight: 600;
+        font-size: 18px;
+        color: $primary-color;
+      }
+      .text_default {
+        color: $dark-color;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+  .owl-nav button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -54px;
+    right: 0;
+    background-color: $light-color !important;
+    transform: translateY(-50%);
+    border: 1px solid $dark-color !important;
+    border-radius: 30px;
+    line-height: 35px !important;
+    color: $dark-color !important;
+    font-size: 20px !important;
+    opacity: 0.5;
+  }
+  .owl-nav button.owl-prev {
+    right: 50px;
+  }
+  .owl-dots {
+    display: none;
+  }
+}
+// ----- Testimonials Section End
+
+// ----- FAQ Section
+.faq {
+  .section_title {
+    margin-bottom: 32px;
+  }
+  .testimonial_area {
+    .accordion-item {
+      color: transparent;
+      background-color: unset;
+      border: none;
+      border-bottom: 2px solid $silver-color;
+    }
+    .accordion-button {
+      color: $dark-color;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: unset;
+      padding: 50px 0 10px;
+      color: $primary-color;
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      &.collapsed {
+        color: $dark-color;
+      }
+    }
+    .accordion-body {
+      color: $dark-color;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 0 15px;
+    }
+    .caution {
+      font-size: 16px;
+      line-height: 24px;
+      color: #4d4d4d;
+      margin-top: 45px;
+    }
+  }
+}
+// ----- FAQ Section End
+
+// ----- Fixed Social Section
+.fixed_social_icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 0 12px 12px 0;
+  padding: 0 10px;
+  z-index: 9999;
+  li {
+    a {
+      padding: 7px 0;
+      display: inline-block;
+      border-bottom: 1px solid $light-color;
+      transition: all 0.4s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &:last-child a {
+      border: none;
+    }
+  }
+}
+// ----- Fixed Social Section End
