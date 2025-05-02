@@ -13,13 +13,21 @@ $(".feature-carousel").owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: false,
+      nav: true,
     },
     768: {
       items: 2,
-      nav: false,
+      nav: true,
     },
     992: {
+      items: 3,
+      nav: true,
+    },
+    1200: {
+      items: 3,
+      nav: true,
+    },
+    1400: {
       items: 4,
       nav: true,
     },
@@ -46,7 +54,7 @@ $(".latest-cattle-carousel").owlCarousel({
     },
     768: {
       items: 2,
-      nav: false,
+      nav: true,
     },
     992: {
       items: 3,
@@ -76,9 +84,13 @@ $(".testimonial-carousel").owlCarousel({
     },
     768: {
       items: 2,
-      nav: false,
+      nav: true,
     },
     992: {
+      items: 3,
+      nav: true,
+    },
+    1200: {
       items: 4,
       nav: true,
     },
@@ -95,3 +107,17 @@ window.addEventListener("scroll", function () {
     element.classList.remove("fixed-nav");
   }
 });
+
+// ----- Mobile Menu Drawer
+const mobileMenuIcon = document.querySelector(".mobile_menu");
+const mobileMenu = document.querySelector(".mobile_menu_door");
+const mobileMenuClose = document.querySelector(".close_icon");
+
+mobileMenuIcon.addEventListener("click", function () {
+  mobileMenu.classList.add("active");
+});
+mobileMenuClose.addEventListener("click", function () {
+  mobileMenu.classList.remove("active");
+});
+
+// ----- Mobile Menu Drawer End

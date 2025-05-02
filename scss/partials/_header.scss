@@ -172,14 +172,113 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 99;
     transform: translateY(-100%);
     opacity: 0;
     animation: slideDown 0.7s forwards ease-in-out;
     background-color: $light-color;
-    padding-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    .nav_main {
+      margin-bottom: 10px;
+    }
+  }
+  .mobile_menu {
+    .mobile_menu_icon {
+      color: $light-color;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  .mobile_menu_door {
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+    background-color: $light-color;
+    height: 99vh;
+    z-index: 999;
+    box-shadow: rgba(136, 165, 191, 0.48) -1px 2px 5px 0px,
+      rgba(255, 255, 255, 0.8) -10px -2px 5px 0px;
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+    &.active {
+      transform: translateX(0%);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      background-color: $primary-color;
+      h6 {
+        margin: 0;
+        font-size: 16px;
+        color: $light-color;
+      }
+      .close_icon {
+        color: $light-color;
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+    ul {
+      margin-top: 30px;
+      li {
+        font-size: 14px;
+        color: $dark-color;
+        padding: 7px 15px;
+        a {
+          text-decoration: none;
+          display: block;
+          color: $dark-color;
+        }
+      }
+    }
+  }
+  .header_bottom_menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: $light-color;
+    width: 100%;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 2px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px 2px;
+    ul {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          gap: 5px;
+          text-decoration: none;
+          color: $dark-color;
+          font-weight: 300;
+          font-size: 12px;
+          padding: 12px 5px;
+          transition: all 0.3s ease;
+          i {
+            color: $dark-color;
+            opacity: 80%;
+            font-size: 16px;
+          }
+          &:hover {
+            color: $primary-color;
+          }
+          &:hover i {
+            color: $primary-color;
+          }
+        }
+      }
+    }
   }
   @keyframes slideDown {
     to {
