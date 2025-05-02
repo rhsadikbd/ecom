@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="vendors/lightbox/lightbox.min.css">
   <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
-
 <body>
   <!-- ----- Header Section -->
   <header>
@@ -144,14 +143,14 @@
   </header>
   <!-- ----- Header Section End -->
 
-  <!-- ===== Banner Section -->
+  <!-- ----- Breadcrumb Section -->
   <section class="breadcrumb_section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <ul class="custom_breadcrumb">
             <li>
-              <a href="#"><i class="fa-solid fa-house"></i></a>
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
             </li>
             <li><a href="#">All Cattle</a></li>
             <li>Cattle-#987987</li>
@@ -170,14 +169,18 @@
       </div>
     </div>
   </section>
-  <!-- ===== Banner Section End -->
+  <!-- ----- Breadcrumb Section End -->
 
-  <!-- ===== All Cattle Section -->
+  <!-- ----- Details Cattle Section -->
   <section class="details_content_section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <div class="details_images">
+            <div class="zoom_in_out">
+              <img src="assets/img/zoom-in.svg" alt="">
+              <img src="assets/img/zoom-out.svg" alt="">
+            </div>
             <a class="my_slides" href="assets/img/cattles/111.JPG" data-lightbox="cattle">
               <img src="assets/img/cattles/111.JPG" data-lightbox="cattle" style="width:100%">
             </a>
@@ -196,7 +199,7 @@
             <a class="my_slides" href="assets/img/cattles/116.JPG" data-lightbox="cattle">
               <img src="assets/img/cattles/116.JPG" data-lightbox="cattle" style="width:100%">
             </a>
-           
+
 
             <div class="slider_row">
               <div class="slider_column">
@@ -250,7 +253,7 @@
           <div class="details_info_card">
             <div class="details_row">
               <h5 class="title">Details Information</h5>
-              <a href="#" class="compare">
+              <a href="compare.html" class="compare">
                 <i class="fa-solid fa-code-compare"></i>
                 <span>Compare</span>
               </a>
@@ -300,319 +303,307 @@
         </div>
       </div>
   </section>
-  <!-- ===== All Cattle Section End -->
+  <!-- ----- Details Cattle Section End -->
 
- <!-- ----- Latest Cattle Section -->
- <section class="latest_cattle">
-  <div class="container">
+  <!-- ----- Latest Cattle Section -->
+  <section class="latest_cattle">
+    <div class="container">
       <div class="row section_title">
-          <div class="col-md-6">
-              <h1 class="title">Latest Cattle</h1>
-          </div>
-          <div class="col-md-6">
-              <a href="#" class="link_new text-end">View All ></a>
-          </div>
+        <div class="col-md-6">
+          <h1 class="title">Latest Cattle</h1>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="link_new text-end">View All ></a>
+        </div>
       </div>
 
       <!-- Set up your HTML -->
       <div class="owl-carousel latest-cattle-carousel">
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
                   </div>
-              </div>
-          </div>
 
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
                   </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
               </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
           </div>
+        </div>
 
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
                   </div>
-              </div>
-          </div>
 
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
                   </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
               </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
           </div>
+        </div>
 
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
                   </div>
-              </div>
-          </div>
 
-          <div class="owl_card">
-              <div class="card_default_item">
-                  <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
-                  <div class="card_content">
-                      <div class="attr_list">
-                          <div class="d-flex gap-2">
-                              <div class="chip_default">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                      viewBox="0 0 16 16" fill="none">
-                                      <path
-                                          d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>Medium</span>
-                              </div>
-
-                              <div class="chip_outlined">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                      viewBox="0 0 14 14" fill="none">
-                                      <path
-                                          d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
-                                          fill="#4E4E4E" />
-                                  </svg>
-                                  <span>125 KG Approx</span>
-                              </div>
-                          </div>
-
-                          <div class="status">
-                              <span class="state active">Avilable</span>
-                              <span class="label">-12:45min</span>
-                          </div>
-                      </div>
-
-                      <div class="title">
-                          <h5 class="title_no">
-                              Deshi Brown Big Size
-                          </h5>
-                          <div class="offer_chip">
-                              <img src="assets/img/free-delivery.svg" alt="" />
-                          </div>
-                      </div>
-
-                      <h5 class="price_label">BDT 179000.00</h5>
-
-                      <a href="" class="btn_primary">View Details</a>
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
                   </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
               </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
           </div>
+        </div>
+
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
+                  </div>
+
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
+                  </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
+              </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
+                  </div>
+
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
+                  </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
+              </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="owl_card">
+          <div class="card_default_item">
+            <img class="w-100" src="assets/img/cattles/111.JPG" alt="111" />
+            <div class="card_content">
+              <div class="attr_list">
+                <div class="d-flex gap-2">
+                  <div class="chip_default">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path
+                        d="M11.6 10.4V8.6H9.8V14H8.6V2H9.8V7.4H11.6V5.6L14 8L11.6 10.4ZM2 8L4.4 10.4V8.6H6.2V14H7.4V2H6.2V7.4H4.4V5.6L2 8Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>Medium</span>
+                  </div>
+
+                  <div class="chip_outlined">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path
+                        d="M7.58333 11.6667V5.13335C7.875 5.01669 8.16666 4.84169 8.34166 4.60835L10.3833 5.36669L8.69166 9.33335C8.4 10.5 9.275 11.0834 10.7333 11.0834C12.1917 11.0834 13.125 10.5 12.775 9.33335L11.2583 5.65835L11.7833 5.83335L12.1917 4.72502L8.75 3.50002C8.75 2.80002 8.34166 2.10002 7.58333 1.80835C6.88333 1.51669 6.125 1.80835 5.65833 2.33335L2.275 1.16669L1.86666 2.21669L2.8 2.56669L1.225 6.41669C0.933331 7.58335 1.80833 8.16669 3.26666 8.16669C4.725 8.16669 5.65833 7.58335 5.30833 6.41669L3.85 2.97502L5.25 3.50002C5.25 4.20002 5.65833 4.90002 6.41666 5.19169V11.6667H1.16666V12.8334H12.8333V11.6667H7.58333ZM11.6083 9.33335H9.85833L10.7333 7.11669L11.6083 9.33335ZM4.14166 6.41669H2.39166L3.26666 4.20002L4.14166 6.41669ZM6.475 3.32502C6.59166 3.03335 6.94166 2.85835 7.23333 2.97502C7.525 3.09169 7.7 3.44169 7.58333 3.73335C7.46666 4.02502 7.11666 4.20002 6.825 4.08335C6.53333 3.96669 6.35833 3.61669 6.475 3.32502Z"
+                        fill="#4E4E4E" />
+                    </svg>
+                    <span>125 KG Approx</span>
+                  </div>
+                </div>
+
+                <div class="status">
+                  <span class="state active">Avilable</span>
+                  <span class="label">-12:45min</span>
+                </div>
+              </div>
+
+              <div class="title">
+                <h5 class="title_no">
+                  Deshi Brown Big Size
+                </h5>
+                <div class="offer_chip">
+                  <img src="assets/img/free-delivery.svg" alt="" />
+                </div>
+              </div>
+
+              <h5 class="price_label">BDT 179000.00</h5>
+
+              <a href="" class="btn_primary">View Details</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-</section>
-<!-- ----- Latest Cattle Section End -->
+    </div>
+  </section>
+  <!-- ----- Latest Cattle Section End -->
 
   <!-- ----- FAQ Section -->
   <section class="faq">
