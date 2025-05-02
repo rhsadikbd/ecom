@@ -672,21 +672,24 @@
   position: fixed;
   top: 50%;
   left: 0;
-  background-color: $primary-color;
   margin: 0;
   list-style: none;
   border-radius: 0 12px 12px 0;
-  padding: 5px;
+  padding: 0;
   z-index: 9999;
   li {
     a {
       background-color: $primary-color;
-      padding: 5px;
+      padding: 8px;
       display: block;
       transition: all 0.4s ease;
       border-radius: 0 6px 6px 0;
+      margin: 2px 0;
+      width: 70px;
+      transform: translateX(-35px);
+      text-align: right;
       &:hover {
-        transform: translateX(20px);
+        transform: translateX(0);
       }
     }
   }

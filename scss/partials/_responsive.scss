@@ -2,6 +2,15 @@
   .header_bottom_menu {
     display: none;
   }
+  header .mian_nav .nav_main .mobile_logo {
+    display: none;
+  }
+  header .mian_nav .mobile_menu {
+    display: none;
+  }
+  header .mian_nav .nav_main .mobile_logo {
+    display: none;
+  }
 }
 @media (max-width: 1400px) {
   .featured_cattle .feature-carousel .owl-nav button.owl-next {
@@ -19,6 +28,12 @@
   .header_bottom_menu {
     display: none;
   }
+  header .mian_nav .mobile_menu {
+    display: none;
+  }
+  header .mian_nav .nav_main .mobile_logo {
+    display: none;
+  }
 }
 @media (max-width: 1200px) {
   header .mian_nav .nav_main .nav_list {
@@ -34,6 +49,9 @@
     display: none;
   }
   .header_bottom_menu {
+    display: none;
+  }
+  header .mian_nav .mobile_menu {
     display: none;
   }
 }
