@@ -4,6 +4,8 @@
         border-radius: 12px;
         background-color: $light-color;
         padding: 30px;
+        max-width: 450px;
+        margin: auto;
         .title {
             color: $secondary-color;
             font-weight: 500;
@@ -60,7 +62,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    width: 45%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
     border-radius: 32px 0 0 32px;
