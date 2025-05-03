@@ -57,6 +57,10 @@
     .details_content_section .purchase_info_card {
         padding: 15px;
     }
+    .page_banner_section .banner_img {
+        height: unset;
+        border-radius: 12px;
+    }
 }
 @media (max-width: 992px) {
     .fixed_social_icons {
@@ -128,6 +132,24 @@
     .details_content_section .details_images .my_slides img {
         height: 400px;
     }
+    .all_cattle_section .cattle_details .top_filter {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+    .page_banner_section .banner_img {
+        height: unset;
+    }
+    .page_banner_section {
+        padding: 10px 0 0;
+    }
+    .compare_table {
+        overflow-x: auto;
+    }
+    .compare_table table {
+        min-width: 1000px;
+    }
 }
 @media (max-width: 768px) {
     .our_process .container .card_default {
@@ -164,6 +186,12 @@
         font-size: 16px;
         padding: 30px 0 10px;
     }
+    .all_cattle_section .cattle_sidebar .long_banner {
+        display: none;
+    }
+    .all_cattle_section .cattle_details {
+        margin-top: 30px;
+    }
 }
 @media (max-width: 576px) {
     .usp_section .usp_card {
@@ -186,5 +214,14 @@
     }
     .cattle_info .box {
         text-align: center;
+    }
+    section {
+        padding: 40px 0;
+    }
+    section .section_title {
+        align-items: center;
+    }
+    section .section_title .title {
+        margin-bottom: 0;
     }
 }
