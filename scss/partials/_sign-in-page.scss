@@ -1,0 +1,67 @@
+.sign_in_section {
+    .sign_in_card {
+        box-shadow: 0px 7px 7px 0px #0000000d;
+        border-radius: 12px;
+        background-color: $light-color;
+        padding: 30px;
+        .title {
+            color: $secondary-color;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+        }
+        .text {
+            color: $dark-color;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        label {
+            color: $dark-color;
+            font-weight: 500;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            border-radius: 20px;
+            padding: 0 20px;
+        }
+        .forgot_text {
+            color: $primary-color;
+            font-size: 14px;
+        }
+        .remember_me {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            label {
+                margin: 0;
+            }
+        }
+        .create_btn {
+            background-color: $primary-color;
+            color: $light-color;
+        }
+        .dont_acc {
+            color: $dark-color;
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0;
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.sign_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px 0 0 32px;
+}
