@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Compare</title>
+    <title>Dashboard</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -171,7 +171,7 @@
             </a>
           </li>
           <li>
-            <a href="dashboard.html">
+            <a href="account.html">
               <i class="fa-regular fa-circle-user"></i>
               <span>Account</span>
             </a>
@@ -190,7 +190,8 @@
               <li>
                 <a href="#"><i class="fa-solid fa-house"></i> Home</a>
               </li>
-              <li>Compare</li>
+              <li><a href="#">Dashboard</a></li>
+              <li>Profile</li>
             </ul>
           </div>
         </div>
@@ -198,318 +199,286 @@
     </section>
     <!-- ----- Breadcrumb Section -->
 
-    <!-- ----- Compare Section -->
-    <section class="compare_section">
+    <!-- ----- Dashboard Section -->
+    <section class="dashboard_section">
       <div class="container">
-        <div class="compare_content">
-          <div class="top_bar">
-            <div class="text">
-              <h5>Product Comparison</h5>
-              <p>
-                Find and select products to see the differences and similarities
-                between them
-              </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="dashboard_left">
+              <div class="left_box">
+                <h4 class="title">Dashboard</h4>
+                <ul>
+                  <li><a href="#" class="active">Profile</a></li>
+                  <li><a href="#">Orders History</a></li>
+                  <li><a href="#">Account Settings</a></li>
+                </ul>
+              </div>
+              <a href="#" class="btn_primary logout_btn">Logout</a>
             </div>
-            <a href="#" class="share_btn">
-              <i class="fa-solid fa-share-nodes"></i> Share
-            </a>
           </div>
-          <div class="compare_table">
-            <table class="table">
-              <tbody>
-                <tr class="align-middle">
-                  <td>You can add Max 4 Products</td>
-                  <td>
-                    <div class="cattle_info">
-                      <h6>#958685858</h6>
-                      <i class="fa-solid fa-trash delete_icon"></i>
-                    </div>
-                    <img
-                      src="assets/img/cattles/111.JPG"
-                      alt=""
-                      class="product_img"
-                    />
-                  </td>
-                  <td>
-                    <div class="cattle_info">
-                      <h6>#958685858</h6>
-                      <i class="fa-solid fa-trash delete_icon"></i>
-                    </div>
-                    <img
-                      src="assets/img/cattles/111.JPG"
-                      alt=""
-                      class="product_img"
-                    />
-                  </td>
-                  <td>
-                    <div class="cattle_info">
-                      <h6>#958685858</h6>
-                      <i class="fa-solid fa-trash delete_icon"></i>
-                    </div>
-                    <img
-                      src="assets/img/cattles/111.JPG"
-                      alt=""
-                      class="product_img"
-                    />
-                  </td>
-                  <td>
-                    <div class="position-relative mb-3">
-                      <label for="">Search For</label>
-                      <input
-                        type="search"
-                        placeholder="Search"
-                        class="form-control search_input"
-                      />
-                      <i class="fa-solid fa-magnifying-glass search_icon"></i>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="name">
-                  <td>Name</td>
-                  <td>Shahiwal</td>
-                  <td>Deshi Bull</td>
-                  <td>Shahiwal</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t1">
-                  <td>Breed</td>
-                  <td>Sahiwal</td>
-                  <td>Sahiwal</td>
-                  <td>Sahiwal</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t2">
-                  <td>Age</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t1">
-                  <td>Teeth</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t2">
-                  <td>Live Weight</td>
-                  <td>150 kg (+-5kg)</td>
-                  <td>150 kg (+-5kg)</td>
-                  <td>150 kg (+-5kg)</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t1">
-                  <td>Feeds</td>
-                  <td>Grass and Grain Feeds</td>
-                  <td>Grass and Grain Feeds</td>
-                  <td>Grass and Grain Feeds</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t2">
-                  <td>Length</td>
-                  <td>5.5 Feet</td>
-                  <td>5.5 Feet</td>
-                  <td>5.5 Feet</td>
-
-                  <td></td>
-                </tr>
-                <tr class="row_color_t1">
-                  <td>Height</td>
-                  <td>5.5 Feet</td>
-                  <td>5.5 Feet</td>
-                  <td>5.5 Feet</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t2">
-                  <td>Width</td>
-                  <td>2m</td>
-                  <td>2m</td>
-                  <td>2m</td>
-                  <td></td>
-                </tr>
-                <tr class="row_color_t1">
-                  <td>Color</td>
-                  <td>Brown</td>
-                  <td>Black</td>
-                  <td>White</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="col-lg-8 col-md-7 col-sm-12">
+            <div class="dashboard_right">
+              <div class="box_card">
+                <div class="box_header">
+                  <h5 class="title">Details information</h5>
+                  <a
+                    href="#"
+                    class="btn_primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailsInfoModal"
+                    >Update</a
+                  >
+                </div>
+                <ul class="box_body">
+                  <li>Name <span>Ariful Islam</span></li>
+                  <li>Email Address <span>arifalislam642@gmail.com</span></li>
+                  <li>
+                    Phone <span>01833774348</span>
+                    <img src="assets/img/verified.png" alt="" />
+                  </li>
+                  <li>Age <span>56yrs</span></li>
+                  <li>Gender <span>Male</span></li>
+                </ul>
+              </div>
+              <div class="box_card">
+                <div class="box_header">
+                  <h5 class="title">Shipping Address</h5>
+                  <a
+                    href="#"
+                    class="btn_primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#shippingAddressModal"
+                    >Update</a
+                  >
+                </div>
+                <ul class="box_body">
+                  <li>Name <span>Ariful Islam</span></li>
+                  <li>Email Address <span>arifalislam642@gmail.com</span></li>
+                  <li>Phone <span>01833774348</span></li>
+                  <li>Address <span>n/a</span></li>
+                  <li>City/Division <span>n/a</span></li>
+                  <li>Zone <span>n/a</span></li>
+                </ul>
+                <p class="impo_text">
+                  The following addresses will be used on the checkout page by
+                  default for billing and delivery products.
+                </p>
+              </div>
+              <div class="user_message">
+                <h5 class="title">We Value Your Personal Info:</h5>
+                <p class="default_text">
+                  Your personal information matters to us. We are committed to
+                  protecting your data and using it responsibly. Any information
+                  you share is kept secure and is only used to improve your
+                  experience. We never sell your data to third parties.
+                  <a href="#">Learn more in Terms of Use</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ----- Compare Section End -->
+    <!-- ----- Dashboard Section End -->
 
-    <!-- ----- FAQ Section -->
-    <section class="faq">
-      <div class="container">
-        <div class="section_title">
-          <h1 class="title text-center">Frequently Asked Questions</h1>
-        </div>
-        <div class="testimonial_area">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
-                  Is your livestock halal-certified?
-                </button>
-              </h2>
-              <div
-                id="flush-collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+    <!-- ----- Details Info Modal -->
+    <div
+      class="modal fade"
+      id="detailsInfoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Update Profile
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="input_box">
+                  <label for="">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ariful Islam"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  How will I select the cattle? Do I have any choice over
-                  colour, type, size, weight and age of the cattle?
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Phone Number *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter number"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  How do I place a Qurbani order?
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Email Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter email"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Age</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter age"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Gender</label>
+                  <select name="" id="" class="form-select form-control">
+                    <option value="">Select</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                  </select>
                 </div>
               </div>
             </div>
           </div>
-          <p class="caution">
-            <strong>CAUTION:</strong> Before using, read the entire user manual.
-            Always conduct a patch test to and begin using on the lowest
-            intensity level to assess your skin sensitivity.
-          </p>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn_primary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn_primary active">
+              Save changes
+            </button>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- ----- FAQ Section End -->
+    </div>
+    <!-- ----- Details Info Modal End -->
 
-    <!-- ----- Footer Section -->
-    <footer>
-      <img src="assets/img/footer_ghp.png" alt="" class="w-100 creative_bg" />
+    <!-- ----- Shipping Address Modal -->
+    <div
+      class="modal fade"
+      id="shippingAddressModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Shipping Address
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">First Name</label>
+                  <input type="text" class="form-control" placeholder="Enter" />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Enter" />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Phone Number *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter number"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Email Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter email"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="input_box">
+                  <label for="">Shipping Address</label>
+                  <textarea
+                    name=""
+                    placeholder="Enter details address"
+                    id=""
+                  ></textarea>
+                </div>
+              </div>
 
-      <div class="top_area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex align-items-center gap-5">
-                <h6 class="follow">Follow Us:</h6>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-youtube"></i>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">City/Division</label>
+                  <select name="" id="" class="form-select form-control">
+                    <option value="">Select</option>
+                    <option value="">Dhaka</option>
+                    <option value="">Sylhet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="input_box">
+                  <label for="">Zone</label>
+                  <select name="" id="" class="form-select form-control">
+                    <option value="">Select</option>
+                    <option value="">Uttara</option>
+                    <option value="">Gulshan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="input_box">
+                  <label for="">Additional Address</label>
+                  <textarea
+                    name=""
+                    placeholder="Enter details address"
+                    id=""
+                  ></textarea>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="footer_content">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-5 col-lg-4">
-              <img src="assets/img/image-qll.png" alt="" />
-              <p class="text_default">
-                Quality Livestock Limited (QLL) was founded in 2021, with the
-                objective of sustainable farming, processing and marketing
-                premium grade cattle, mutton and chicken products
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-2">
-              <h5 class="title">Information</h5>
-              <ul class="footer_el">
-                <li><a href="#">About QLL</a></li>
-                <li><a href="#">Browse Marketplace</a></li>
-                <li><a href="#">Compare Cattle</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-lg-2 d-md-none d-lg-block">
-              <h5 class="title">Quick Links</h5>
-              <ul class="footer_el">
-                <li><a href="#">My Account</a></li>
-                <li><a href="#"> Customer helpline </a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <h5 class="title">Contact</h5>
-              <ul class="contact_option">
-                <li>
-                  <i class="fa-solid fa-location-dot"></i> House 14, Road 7
-                  Sector 4, <br />
-                  Uttara Dhaka-1230, Bangladesh
-                </li>
-                <li><i class="fa-solid fa-phone"></i> 01313401030</li>
-                <li><i class="fa-solid fa-envelope"></i> info@qll.com.bd</li>
-              </ul>
-            </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn_primary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn_primary active">
+              Save changes
+            </button>
           </div>
         </div>
       </div>
-      <div class="copyright_text">
-        <p class="text_default">
-          © 2021 All Rights Reserved - Quality Livestock Limited
-        </p>
-      </div>
-    </footer>
-    <!-- ----- Footer Section End -->
+    </div>
+    <!-- ----- Shipping Address Modal End -->
 
     <script src="vendors/owlcarousel/jquery.min.js"></script>
     <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
