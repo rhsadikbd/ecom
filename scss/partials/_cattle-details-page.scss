@@ -72,16 +72,20 @@
       }
     }
     .slider_row {
+      overflow-x: auto;
+      width: 100%;
+      display: flex;
       &::after {
         content: "";
         display: table;
         clear: both;
       }
     }
+    
     .slider_column {
-      float: left;
-      width: 16.66%;
-      border: 1px solid $light-color;
+      min-width: 140px;
+    max-width: 140px;
+    border: 1px solid #fff;
       .demo {
         opacity: 0.6;
       }
@@ -89,6 +93,11 @@
       .demo:hover {
         opacity: 1;
       }
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .cattle_info {
@@ -265,3 +274,4 @@
     }
   }
 }
+
