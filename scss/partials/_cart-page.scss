@@ -64,6 +64,17 @@
         }
       }
     }
+    .brows_more_btn {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 15px 80px;
+      border: 1px solid #4d4d4d;
+      color: #4d4d4d;
+      &:hover {
+        border: 1px solid $light-color;
+        color: $light-color;
+      }
+    }
   }
 
   .left_cart_box {
