@@ -67,3 +67,10 @@ section {
     color: $light-color;
   }
 }
+
+
+input[type="range"],
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: $primary-color; 
+}
