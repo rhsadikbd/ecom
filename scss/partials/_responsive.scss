@@ -210,6 +210,33 @@
   .dashboard_right_order .box_card .box_body li:first-child::before {
     top: 7px;
   }
+
+  .contact_section .inner_wrapper .contact_info .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .contact_section .inner_wrapper .contact_info {
+    padding: 30px 20px 20px;
+  }
+
+  .contact_section .inner_wrapper .contact_info .text_default {
+    font-size: 14px;
+    line-height: 133%;
+    margin-bottom: 100px;
+  }
+
+  .contact_section .inner_wrapper .contact_info ul li {
+    gap: 10px;
+  }
+
+
+
+
+
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -289,6 +316,10 @@
 
   .cart_section .top_info .empty_cart_img {
     width: 60%;
+  }
+
+  .contact_section .inner_wrapper .contact_info .social_contact {
+    margin-top: 100px;
   }
 }
 
