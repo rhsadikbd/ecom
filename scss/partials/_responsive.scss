@@ -230,7 +230,13 @@
     gap: 10px;
   }
 
+  .about_section .about_banner {
+    height: 350px;
+  }
 
+  .about_page_info .info_card {
+    margin-bottom: 30px;
+  }
 
 
 
@@ -320,6 +326,31 @@
 
   .contact_section .inner_wrapper .contact_info .social_contact {
     margin-top: 100px;
+  }
+
+  .about_section .about_banner {
+    height: 250px;
+    margin-bottom: 52px;
+  }
+
+  .about_section .about_content .text_default {
+    text-align: justify;
+  }
+
+  .terms_section .dates {
+    padding-left: unset;
+  }
+
+  .terms_section .terms_content .terms_item .text_default {
+    text-align: justify;
+  }
+
+  .terms_section {
+    padding-bottom: 0;
+  }
+
+  .terms_page_title_section .top_info .title {
+    font-size: 26px;
   }
 }
 

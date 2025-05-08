@@ -1,0 +1,76 @@
+.terms_section {
+    padding-top: 50px;
+
+    .dates {
+        padding-left: 30%;
+
+        .text {
+            color: $dark-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 164%;
+            margin-bottom: 0;
+        }
+
+        .date {
+            color: $secondary-color;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 164%;
+        }
+    }
+
+    .terms_content {
+        .terms_item {
+            margin-bottom: 50px;
+
+            .title {
+                color: #1C1C1C;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 130%;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                li {
+                    color: #595566;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 148%;
+                }
+            }
+
+            .text_default {
+                color: #595566;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 148%;
+
+            }
+        }
+    }
+}
+
+.terms_page_title_section {
+    text-align: center;
+    padding: 50px 0 0;
+    border-top: 1px solid $silver-color;
+
+    .top_info {
+        .title {
+            color: #181818;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 120%;
+            margin-bottom: 15px;
+        }
+
+        .text_default {
+            color: #7d7d7d;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 124%;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.about_section {
+    border-top: 1px solid #C3DED0;
+    padding: 20px 0 60px;
+
+    .center-col {
+        align-items: center;
+    }
+
+    .about_banner {
+        height: 420px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 72px;
+    }
+
+    .about_content {
+        padding-right: 40px;
+
+        .title {
+            color: $secondary-color;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 120%;
+            margin-bottom: 20px;
+        }
+
+        .text_default {
+            color: $dark-color;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 164%;
+        }
+    }
+
+    .about_count {
+        width: 100%;
+        padding: 30px 10px 15px 20px;
+        border-radius: 32px;
+        border: 1px solid #c3ded0;
+        border-left-width: 4px;
+        border-top-width: 4px;
+        background-color: rgba(0, 115, 54, .062745098);
+        margin-top: 25px;
+
+        .num {
+            color: $primary-color;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 100%;
+        }
+
+        .text {
+            color: $dark-color;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 142%;
+            text-transform: capitalize;
+
+        }
+    }
+}
+
+
+.about_page_info {
+    background-color: $silver-color;
+
+    .text_default {
+        color: $dark-color;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 15px 0 30px;
+        line-height: 22px !important;
+    }
+
+    .info_card {
+        padding: 30px;
+        border-radius: 12px;
+        background-color: $light-color;
+
+        img {
+            height: 64px;
+            width: 64px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .text_content {
+            .title {
+                font-weight: 600;
+                font-size: 18px;
+                color: $dark-color;
+                margin: 0 0 5px 0;
+            }
+
+            .text_default {
+                font-weight: 400;
+                font-size: 14px;
+                color: $dark-color;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.gallery_section {
+    img {
+        width: 100%;
+    }
+}
