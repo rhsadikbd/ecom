@@ -102,10 +102,6 @@
     display: block;
   }
 
-  header .mian_nav .topbar {
-    display: none;
-  }
-
   header .mian_nav .nav_main {
     margin: 10px 0;
   }
@@ -237,12 +233,9 @@
   .about_page_info .info_card {
     margin-bottom: 30px;
   }
-
-
-
-
-
-
+  header .mian_nav .topbar {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -351,6 +344,9 @@
 
   .terms_page_title_section .top_info .title {
     font-size: 26px;
+  }
+  header .mian_nav .topbar .contact_area h6 {
+    display: none;
   }
 }
 
