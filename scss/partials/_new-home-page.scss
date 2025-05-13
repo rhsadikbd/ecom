@@ -1,0 +1,162 @@
+.top_heading_section {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: $light-color;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  .phone {
+    text-decoration: none;
+    display: inline-block;
+    background-color: $primary-color;
+    color: $light-color;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 20px 7px 7px;
+    border-radius: 30px;
+    .fa-phone {
+      background-color: $light-color;
+      color: $primary-color;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      line-height: 35px;
+      text-align: center;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.new_banner_section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../../assets/img/firms.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 70vh;
+  border-radius: 0 0 78px 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 128%;
+    text-transform: capitalize;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    color: $light-color;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+  }
+  .btn_primary {
+    width: fit-content;
+    border-radius: 3px;
+    color: $dark-color;
+    margin: 30px auto 0;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    &:hover {
+      background-color: $primary-color;
+      color: $light-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.our_story_section {
+  background-color: $light-color;
+  .title {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 128%;
+    text-transform: capitalize;
+    position: relative;
+    white-space: nowrap;
+  }
+  .border {
+    width: 100%;
+    height: 1px;
+    background-color: #007336;
+  }
+  p {
+    color: $dark-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 128%;
+  }
+  .story_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #c3ded0;
+    border-radius: 12px;
+    background-color: #fcfcfc;
+    padding: 20px 15px 5px;
+    margin-top: 20px;
+    .num {
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 100%;
+
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #00000026;
+      -webkit-text-fill-color: $light-color;
+    }
+    .title {
+      color: #025227;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 100%;
+      margin-bottom: 15px;
+    }
+    .text_default {
+      color: #484848;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 142%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .new_banner_section .text {
+    font-size: 36px;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .top_heading_section {
+    height: 50px;
+  }
+  .top_heading_section .main_logo {
+    height: 26px;
+  }
+  .top_heading_section .phone .fa-phone {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .top_heading_section .phone {
+    font-size: 12px;
+    padding: 5px 15px 5px 5px;
+  }
+  .new_banner_section .text {
+    font-size: 26px;
+    width: 100%;
+  }
+  .new_banner_section {
+    height: 40vh;
+    border-radius: 0 0 30px 30px;
+  }
+}
