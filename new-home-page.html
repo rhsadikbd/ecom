@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css" />
   <link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/owlcarousel/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <link rel="stylesheet" href="assets/css/new-home-page.min.css" />
 </head>
 
 <body>
@@ -315,7 +315,7 @@
   <!-- ----- Testimonials Section End -->
 
   <!-- ----- Footer Section -->
-  <footer>
+  <footer class="mb-0">
     <div class="top_area">
       <div class="container">
         <div class="row">
@@ -374,7 +374,6 @@
   <script src="vendors/owlcarousel/jquery.min.js"></script>
   <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assets/js/script.js"></script> -->
 
   <script>
     $(".testimonial-carousel").owlCarousel({
@@ -409,28 +408,26 @@
     });
     $(".featured-in-carousel").owlCarousel({
       loop: true,
-      navText: false,
-      margin: 50,
+      margin: 30,
+      nav: false,
+      dots: false,
       autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      responsiveClass: true,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: false,
       responsive: {
         0: {
-          items: 1,
-          nav: true,
+          items: 2,
         },
         768: {
-          items: 2,
-          nav: true,
+          items: 3,
+
         },
         992: {
-          items: 3,
-          nav: true,
+          items: 4,
         },
         1200: {
           items: 5,
-          nav: true,
         },
       },
     });
